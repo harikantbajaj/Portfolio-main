@@ -59,7 +59,7 @@ const projects = [
     title: "DogGPT",
     subtitle: "Fun AI Chatbot",
     description:
-      "A playful AI chatbot built with ReactJS that responds to every user message in the style of a dog — saying “bhaw bhaw” with expressive, humorous text and cute sound effects. Designed with a modern, responsive UI, smooth animations, and fast performance. Users can chat just like ChatGPT, but with a fun, pet-like personality. Deployed on Vercel for instant global access.",
+      "A playful AI chatbot built with ReactJS that responds to every user message in the style of a dog — saying bhaw bhaw with expressive, humorous text and cute sound effects. Designed with a modern, responsive UI, smooth animations, and fast performance. Users can chat just like ChatGPT, but with a fun, pet-like personality. Deployed on Vercel for instant global access.",
     images: [lsit10, lsit9],
     liveDemo: "https://doggpt0.vercel.app/",
     github: "https://github.com/harikantbajaj/doggpt",
@@ -70,7 +70,6 @@ const projects = [
     description:
       "An AI-powered interview practice platform built with Next.js and TypeScript, offering real-time voice-based mock interviews powered by Google Gemini. Users can speak naturally while the AI listens, responds, and provides instant feedback on performance. Includes topic-wise practice, MCQ quiz mode, resume analysis, coding compiler, progress tracking, and an integrated LeetCode practice hub. Features a polished UI with ShadCN components, secure authentication with Firebase, and seamless deployment on Vercel.",
     images: [lsit11,lsit12,lsit13, lsit14],
-    liveDemo: "https://yt-frontend-three.vercel.app/",
     github: "https://github.com/harikantbajaj/munch",
   },
   {
@@ -87,8 +86,7 @@ const projects = [
     description:
       "An intelligent travel planning system that generates personalized itineraries, budgets, and trip summaries using real-time data and AI reasoning. Built with Python, it integrates OpenWeather, Google Places, and currency conversion APIs to provide weather-aware packing tips, attraction suggestions, hotel estimates, and cost breakdowns. Includes three planning modes — from a classic single-agent approach to an advanced multi-agent system using LangGraph + Google Gemini, enabling collaborative decision-making for complex trips. Outputs clean, day-by-day travel plans with expense estimates and flexible export options.",
     images: [lsit24, lsit22, lsit23],
-    liveDemo: "https://yt-frontend-three.vercel.app/",
-    github: "https://github.com/harikantbajaj/munch",
+    github: "https://github.com/harikantbajaj/ai-travel-multi-agent",
   },
 ];
 
@@ -195,14 +193,16 @@ function Project() {
                 <motion.button initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:0.4}}>
                   <a href={project.github} target="_blank" className="border-2 border-pink-700 dark:border-green-500 px-2 py-1 lg:px-4 lg:py-2 text-lg rounded hover:bg-pink-600 dark:hover:bg-green-600 duration-150">Github</a>
                 </motion.button>
-                <motion.button initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:0.4,delay:0.3}}>
-                  <a href={project.liveDemo} target="_blank" className="border-2 border-pink-700 dark:border-green-500 px-2 py-1 lg:px-4 lg:py-2 text-lg rounded hover:bg-pink-600 dark:hover:bg-green-600 duration-150">Live Demo</a>
-                </motion.button>
-                {project.buy ? (
-                  <motion.button initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:0.4,delay:0.6}}>
-                    <a href='https://wa.me/919795372555/' target="_blank" className="border-2 border-pink-700 dark:border-green-500 px-2 py-1 lg:px-4 lg:py-2 text-lg rounded hover:bg-pink-600 dark:hover:bg-green-600 duration-150">Buy Now</a>
+                {project.liveDemo && (
+                  <motion.button initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:0.4,delay:0.3}}>
+                    <a href={project.liveDemo} target="_blank" className="border-2 border-pink-700 dark:border-green-500 px-2 py-1 lg:px-4 lg:py-2 text-lg rounded hover:bg-pink-600 dark:hover:bg-green-600 duration-150">Live Demo</a>
                   </motion.button>
-                ) : null}
+                )}
+                {project.buy && (
+                  <motion.button initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:0.4,delay:0.6}}>
+                    <a href='https://wa.me/+919109020520/' target="_blank" className="border-2 border-pink-700 dark:border-green-500 px-2 py-1 lg:px-4 lg:py-2 text-lg rounded hover:bg-pink-600 dark:hover:bg-green-600 duration-150">Buy Now</a>
+                  </motion.button>
+                )}
               </div>
               <div className='tracking-wider text-xl'>
                 <motion.span initial='hidden' whileInView='visible' variants={variants} transition={{transition:0.4,delay:0.3}} className='text-3xl font-bold text-pink-600 dark:text-green-400'>{project.title} : </motion.span>
