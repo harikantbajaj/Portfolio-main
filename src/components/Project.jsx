@@ -1,12 +1,27 @@
 import { useState, useEffect } from 'react';
-import nextgenhero from '../Media/showoff/nextgenhero.png'
-import nextgen1 from '../Media/showoff/nextgen1.png'
-import nextgen2 from '../Media/showoff/nextgen2.png'
-import nextgen3 from '../Media/showoff/nextgen3.png'
-import lsitHero from '../Media/showoff/lsitHero.png'
-import lsit1 from '../Media/showoff/lsit1.png'
-import lsit2 from '../Media/showoff/lsit2.png'
-import lsit3 from '../Media/showoff/lsit3.png'
+
+import lsitHero from '../Media/showoff/Screenshot 2025-11-04 150414.png'
+import lsit1 from '../Media/showoff/Screenshot 2025-11-04 150137.png'
+import lsit2 from 'C:/Portfolio-main/src/Media/showoff/Screenshot 2025-11-04 150213.png'
+import lsit3 from 'C:/Portfolio-main/src/Media/showoff/Screenshot 2025-11-04 150319.png'
+
+import lsit4 from '../Media/showoff/zum0.png'
+import lsit5 from '../Media/showoff/zum2.png'
+import lsit6 from 'C:/Portfolio-main/src/Media/showoff/zum3.png'
+import lsit7 from 'C:/Portfolio-main/src/Media/showoff/zum4.png'
+import lsit8 from 'C:/Portfolio-main/src/Media/showoff/ai code.png'
+import lsit9 from 'C:/Portfolio-main/src/Media/showoff/dog1 (1).png'
+import lsit10 from 'C:/Portfolio-main/src/Media/showoff/dog1 (2).png'
+import lsit11 from '../Media/showoff/a (1).png'
+import lsit12 from 'C:/Portfolio-main/src/Media/showoff/a (2).png'
+import lsit13 from 'C:/Portfolio-main/src/Media/showoff/a (3).png'
+import lsit14 from 'C:/Portfolio-main/src/Media/showoff/a (4).png'
+import lsit15 from 'C:/Portfolio-main/src/Media/showoff/a (5).png'
+import lsit16 from 'C:/Portfolio-main/src/Media/showoff/a (6).png'
+import lsit17 from 'C:/Portfolio-main/src/Media/showoff/b (1).png'
+import lsit18 from 'C:/Portfolio-main/src/Media/showoff/b (2).png'
+
+
 import rdtechHero from '../Media/showoff/rdtechHero.png'
 import rdtech1 from '../Media/showoff/rdtech1.png'
 import rdtech2 from '../Media/showoff/rdtech2.png'
@@ -19,40 +34,63 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: "LS4IT",
-    subtitle: "Fabric Manufacturing Company",
+    title: "Text Summarization Project",
+    subtitle: "AI-Powered Text Summarization Web App",
     description:
-      "A professional corporate website built as a freelance project for LS4IT, a leading fabric manufacturing company. Designed with Next.js, Tailwind CSS, and a headless CMS, the site supports **multi-language content (English & Arabic)** with smooth language switching. Optimized with CDN delivery, advanced SEO practices, and blazing-fast load times. Integrated a custom CMS for easy content management, product showcasing, and blog updates. Fully responsive, secure, and tailored for a global audience in the textile industry.",
+      "A smart summarization platform powered by a fine-tuned Llama-2 model trained for abstractive summarization. Users can input text, upload documents/images (via OCR), or paste URLs for automatic content extraction and summarization. Built with React.js + Tailwind CSS on the frontend and a Python backend optimized using QLoRA for efficient model performance. Delivers clear, concise summaries evaluated with ROUGE & BLEU scores — fast, accurate, and user-friendly for research, reading, and productivity.",
     images: [lsitHero, lsit1, lsit2, lsit3],
-    liveDemo: "https://www.ls4it.com/en",
-    github: "https://github.com/MohdZaid259/lsit",
+    github: "https://github.com/harikantbajaj/Text-Summarization-Llama-2-main",
+  },  {
+    title: "RideX",
+    subtitle: "Real-Time Ride Sharing Platform",
+    description:
+      "A full-stack ride-hailing platform (similar to Uber/Ola) built with React, Node.js/Express, and MongoDB. Supports real-time driver location and ride status updates using Socket.io, along with JWT authentication and bcrypt-secured login for riders and drivers. Features include ride request flow, driver matching using MongoDB geospatial queries, live map tracking (Leaflet), role-based dashboards, and responsive UI with Tailwind CSS. Designed for fast, reliable, and real-time ride coordination.",
+    images: [ lsit4, lsit5, lsit6, lsit7],
+    liveDemo: "https://zum-hazel.vercel.app/",
+    github: "https://github.com/harikantbajaj/zum",
+  },  {
+    title: "Codere",
+    subtitle: "AI Code Reviewer ",
+    description:
+      "A web-based code review tool built with Next.js that uses Google Gemini AI to analyze code and provide intelligent feedback. Supports real-time review, syntax highlighting, and markdown documentation with a clean UI powered by Shadcn-UI + Tailwind CSS. Uses Prism.js for code styling and Axios for smooth API communication. Fully responsive and deployable on Vercel, offering developers fast, AI-driven code quality insights.",
+    images: [lsit8],
+    liveDemo: "https://ai-code-reviewer-main.vercel.app/",
+    github: "https://github.com/harikantbajaj/AI-Code-Reviewer-main",
   },
   {
-    title: "RDTech Group",
-    subtitle: "Multi-Million Group of Companies",
+    title: "DogGPT",
+    subtitle: "Fun AI Chatbot",
     description:
-      "A large-scale, enterprise-grade website delivered as a freelance project for RDTech Group, a diversified multi-million business conglomerate. Built with Next.js, TypeScript, and Tailwind CSS, backed by a powerful CMS for effortless updates across multiple divisions. The site includes **multi-language support, global CDN integration, SEO optimization, custom animations, and scalable architecture**. Focused on showcasing the brand’s subsidiaries, projects, and services with a premium, corporate aesthetic. Designed for speed, accessibility, and long-term scalability, making it a true digital flagship for the group.",
-    images: [rdtechHero, rdtech1, rdtech2, rdtech3],
-    liveDemo: "https://rdtech-group.com/",
-    github: "https://github.com/MohdZaid259/rdtech.git",
+      "A playful AI chatbot built with ReactJS that responds to every user message in the style of a dog — saying “bhaw bhaw” with expressive, humorous text and cute sound effects. Designed with a modern, responsive UI, smooth animations, and fast performance. Users can chat just like ChatGPT, but with a fun, pet-like personality. Deployed on Vercel for instant global access.",
+    images: [lsit10, lsit9],
+    liveDemo: "https://doggpt0.vercel.app/",
+    github: "https://github.com/harikantbajaj/doggpt",
   },
   {
-    title: "ViewTube",
-    subtitle: "The Yt Clone",
+    title: "Munch",
+    subtitle: "AI Interview Prep Platform",
     description:
-      "A dynamic, high-performance video streaming web app built with Next.js, Express.js, and MongoDB. Features include JWT auth, seamless video & thumbnail uploads via Cloudinary, real-time likes, comments, views, and subscriptions. Users can manage playlists, watch history, and even save videos for later. Includes an admin panel and smart recommendations using real YouTube APIs. Feels like YouTube, built from scratch!",
-    images: [ythero, yt1, yt2, yt3],
+      "An AI-powered interview practice platform built with Next.js and TypeScript, offering real-time voice-based mock interviews powered by Google Gemini. Users can speak naturally while the AI listens, responds, and provides instant feedback on performance. Includes topic-wise practice, MCQ quiz mode, resume analysis, coding compiler, progress tracking, and an integrated LeetCode practice hub. Features a polished UI with ShadCN components, secure authentication with Firebase, and seamless deployment on Vercel.",
+    images: [lsit11,lsit12,lsit13, lsit14, lsit15, lsit16],
     liveDemo: "https://yt-frontend-three.vercel.app/",
-    github: "https://github.com/MohdZaid259/yt-frontend.git",
+    github: "https://github.com/harikantbajaj/munch",
   },
   {
-    title: "NextGen Herbals",
-    subtitle: "The Ecommerce",
+    title: "Black Myth: Wukong",
+    subtitle: "Animated Landing Page",
     description:
-      "A modern, full-featured eCommerce site for herbal products built with React.js and Tailwind CSS. Integrated with Firebase for secure authentication and real-time data, and Razorpay for smooth, reliable payments. Features include dynamic product listings, shopping cart, order history, and a clean, mobile-friendly UI. Fast, secure, and designed to deliver a premium shopping experience with a traditional herbal touch.",
-    images: [nextgenhero, nextgen1, nextgen2, nextgen3],
-    liveDemo: "https://nextgen-herbals.vercel.app/",
-    github: "https://github.com/MohdZaid259/NextGen.git",
+      "A visually immersive landing page inspired by Black Myth: Wukong, built with React and Vite, featuring cinematic GSAP animations, parallax motion, and dynamic character visuals. Styled with Tailwind CSS for full responsiveness across devices, delivering a smooth, atmospheric browsing experience that captures the mythical tone of the game. Designed for aesthetic storytelling and high-impact presentation.",
+    images: [lsit17, lsit18],
+    liveDemo: "https://wukong-frontend.vercel.app/",
+    github: "https://github.com/harikantbajaj/wukong-frontend",
+  },{
+    title: "Black Myth: Wukong",
+    subtitle: "Animated Landing Page",
+    description:
+      "A visually immersive landing page inspired by Black Myth: Wukong, built with React and Vite, featuring cinematic GSAP animations, parallax motion, and dynamic character visuals. Styled with Tailwind CSS for full responsiveness across devices, delivering a smooth, atmospheric browsing experience that captures the mythical tone of the game. Designed for aesthetic storytelling and high-impact presentation.",
+    images: [lsit11,lsit12,lsit13, lsit14, lsit15, lsit16],
+    liveDemo: "https://yt-frontend-three.vercel.app/",
+    github: "https://github.com/harikantbajaj/munch",
   },
 ];
 

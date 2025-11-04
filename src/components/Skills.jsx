@@ -28,12 +28,11 @@ function Skills() {
     html,css,atom,redux,tailwind,shadcn,node,next,appwrite,express,axios,firebase,framer,js,c,ts,mysql,mongodb,git,github,vercel,postman
   ]
   const skills=[
-    ['HTML 5','CSS 3','ReactJs','Redux','Tailwind','Shadcn','Framer Motion'],
-    ['NodeJs','NextJs','Express','Appwrite','Axios','Firebase'],
-    ['Typescript','Javascript','Python','c'],
-    ['MongoDb','MySQL'],
-    ['Git','Github','Postman','Vercel']
-  ]
+    ['Python | Java | C | C++ | HTML | CSS | JavaScript | TypeScript | Object-Oriented Programming (OOP) | Data Structures & Algorithms | System Design | Operating Systems'],
+    ['TensorFlow | Keras | PyTorch | Scikit-Learn | HuggingFace Transformers | OpenCV | Pandas | NumPy | SciPy | Matplotlib | LangChain | YOLOv8 | Faster R-CNN | UNet | ReactJs | NextJs | Tailwind | ShadCN UI | Framer Motion | NodeJs | Express | Flask | FastAPI | Socket.io'],
+    ['Machine Learning | Deep Learning | Computer Vision | Natural Language Processing | LLMs | RAG Systems | Prompt Engineering | Neural Networks | Transformer & GPT Architectures | Hyperparameter Tuning'],
+    ['MySQL | PostgreSQL | MongoDb | Firebase | Appwrite | AWS EC2 | Google Cloud | Vercel | Railway | Render'],
+    ['Design Patterns | RESTful API Development | Microservices | Clean Code | Testing & Debugging | Version Control (Git) | Agile Development']  ]
   const tooltipTexts = [
     'HTML','CSS','ReactJs','Redux','Tailwind','Shadcn','NodeJs','NextJs','Appwrite','Express','Axios','Firebase','Framer Motion','Javascript','c','Typescript','MySQL','MongoDb','Git','Github','Vercel','Postman'
   ];
@@ -111,7 +110,7 @@ function Skills() {
           <div className="grid grid-cols-[auto_auto]  grid-rows-[auto_auto_auto] gap-x-24 gap-y-5">
             <div>
               <span className="text-xl md:text-2xl font-semibold  text-pink-700 dark:text-green-400">
-                Frontend
+                Core Programming & CS Fundamentals
               </span>
               <motion.div
                 initial="hidden"
@@ -130,7 +129,7 @@ function Skills() {
             </div>
             <div>
               <span className="text-xl md:text-2xl font-semibold text-pink-700 dark:text-green-400">
-                Backend
+                Frameworks & Libraries
               </span>
               <motion.div
                 initial="hidden"
@@ -149,7 +148,7 @@ function Skills() {
             </div>
             <div className="">
               <span className="text-xl md:text-2xl font-semibold text-pink-700 dark:text-green-400">
-                Languages
+                AI / Machine Learning
               </span>
               <motion.div
                 initial="hidden"
@@ -168,7 +167,7 @@ function Skills() {
             </div>
             <div className="">
               <span className="text-xl md:text-2xl font-semibold text-pink-700 dark:text-green-400">
-                Tools
+                 Software Development
               </span>
               <motion.div
                 initial="hidden"
@@ -187,7 +186,8 @@ function Skills() {
             </div>
             <div className="">
               <span className="text-xl md:text-2xl font-semibold text-pink-700 dark:text-green-400">
-                DBMS
+                Databases & Cloud
+
               </span>
               <motion.div
                 initial="hidden"
@@ -203,6 +203,8 @@ function Skills() {
                   );
                 })}
               </motion.div>
+            </div>
+            <div className="">
             </div>
           </div>
         </div>
