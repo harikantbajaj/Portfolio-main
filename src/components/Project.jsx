@@ -1,18 +1,17 @@
 import { useState, useEffect } from 'react';
 
-import lsitHero from '../Media/showoff/Screenshot 2025-11-04 150414.png'
-import lsit1 from '../Media/showoff/Screenshot 2025-11-04 150137.png'
-import lsit2 from 'C:/Portfolio-main/src/Media/showoff/Screenshot 2025-11-04 150213.png'
-import lsit3 from 'C:/Portfolio-main/src/Media/showoff/Screenshot 2025-11-04 150319.png'
+import lsitHero from '../Media/showoff/text1.png'
+import lsit1 from '../Media/showoff/text2 (1).png'
+import lsit2 from 'C:/Portfolio-main/src/Media/showoff/text2 (2).png'
 
-import lsit4 from '../Media/showoff/zum0.png'
-import lsit5 from '../Media/showoff/zum2.png'
+import lsit4 from 'C:/Portfolio-main/src/Media/showoff/zum0.png'
+import lsit5 from 'C:/Portfolio-main/src/Media/showoff/zum2.png'
 import lsit6 from 'C:/Portfolio-main/src/Media/showoff/zum3.png'
 import lsit7 from 'C:/Portfolio-main/src/Media/showoff/zum4.png'
 import lsit8 from 'C:/Portfolio-main/src/Media/showoff/ai code.png'
 import lsit9 from 'C:/Portfolio-main/src/Media/showoff/dog1 (1).png'
 import lsit10 from 'C:/Portfolio-main/src/Media/showoff/dog1 (2).png'
-import lsit11 from '../Media/showoff/a (1).png'
+import lsit11 from 'C:/Portfolio-main/src/Media/showoff/a (1).png'
 import lsit12 from 'C:/Portfolio-main/src/Media/showoff/a (2).png'
 import lsit13 from 'C:/Portfolio-main/src/Media/showoff/a (3).png'
 import lsit14 from 'C:/Portfolio-main/src/Media/showoff/a (4).png'
@@ -21,15 +20,11 @@ import lsit16 from 'C:/Portfolio-main/src/Media/showoff/a (6).png'
 import lsit17 from 'C:/Portfolio-main/src/Media/showoff/b (1).png'
 import lsit18 from 'C:/Portfolio-main/src/Media/showoff/b (2).png'
 
+import lsit22 from 'C:/Portfolio-main/src/Media/showoff/travel (3).png'
+import lsit23 from 'C:/Portfolio-main/src/Media/showoff/travel (1).png'
+import lsit24 from 'C:/Portfolio-main/src/Media/showoff/travel (2).png'
 
-import rdtechHero from '../Media/showoff/rdtechHero.png'
-import rdtech1 from '../Media/showoff/rdtech1.png'
-import rdtech2 from '../Media/showoff/rdtech2.png'
-import rdtech3 from '../Media/showoff/rdtech3.png'
-import ythero from '../Media/showoff/ythero.png'
-import yt1 from '../Media/showoff/yt1.png'
-import yt2 from '../Media/showoff/yt2.png'
-import yt3 from '../Media/showoff/yt3.png'
+
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -38,7 +33,7 @@ const projects = [
     subtitle: "AI-Powered Text Summarization Web App",
     description:
       "A smart summarization platform powered by a fine-tuned Llama-2 model trained for abstractive summarization. Users can input text, upload documents/images (via OCR), or paste URLs for automatic content extraction and summarization. Built with React.js + Tailwind CSS on the frontend and a Python backend optimized using QLoRA for efficient model performance. Delivers clear, concise summaries evaluated with ROUGE & BLEU scores — fast, accurate, and user-friendly for research, reading, and productivity.",
-    images: [lsitHero, lsit1, lsit2, lsit3],
+    images: [lsitHero, lsit1, lsit2],
     github: "https://github.com/harikantbajaj/Text-Summarization-Llama-2-main",
   },  {
     title: "RideX",
@@ -71,7 +66,7 @@ const projects = [
     subtitle: "AI Interview Prep Platform",
     description:
       "An AI-powered interview practice platform built with Next.js and TypeScript, offering real-time voice-based mock interviews powered by Google Gemini. Users can speak naturally while the AI listens, responds, and provides instant feedback on performance. Includes topic-wise practice, MCQ quiz mode, resume analysis, coding compiler, progress tracking, and an integrated LeetCode practice hub. Features a polished UI with ShadCN components, secure authentication with Firebase, and seamless deployment on Vercel.",
-    images: [lsit11,lsit12,lsit13, lsit14, lsit15, lsit16],
+    images: [lsit11,lsit12,lsit13, lsit14],
     liveDemo: "https://yt-frontend-three.vercel.app/",
     github: "https://github.com/harikantbajaj/munch",
   },
@@ -84,11 +79,11 @@ const projects = [
     liveDemo: "https://wukong-frontend.vercel.app/",
     github: "https://github.com/harikantbajaj/wukong-frontend",
   },{
-    title: "Black Myth: Wukong",
-    subtitle: "Animated Landing Page",
+    title: "travy",
+    subtitle: "AI Travel Agent & Expense Planner",
     description:
-      "A visually immersive landing page inspired by Black Myth: Wukong, built with React and Vite, featuring cinematic GSAP animations, parallax motion, and dynamic character visuals. Styled with Tailwind CSS for full responsiveness across devices, delivering a smooth, atmospheric browsing experience that captures the mythical tone of the game. Designed for aesthetic storytelling and high-impact presentation.",
-    images: [lsit11,lsit12,lsit13, lsit14, lsit15, lsit16],
+      "An intelligent travel planning system that generates personalized itineraries, budgets, and trip summaries using real-time data and AI reasoning. Built with Python, it integrates OpenWeather, Google Places, and currency conversion APIs to provide weather-aware packing tips, attraction suggestions, hotel estimates, and cost breakdowns. Includes three planning modes — from a classic single-agent approach to an advanced multi-agent system using LangGraph + Google Gemini, enabling collaborative decision-making for complex trips. Outputs clean, day-by-day travel plans with expense estimates and flexible export options.",
+    images: [lsit24, lsit22, lsit23],
     liveDemo: "https://yt-frontend-three.vercel.app/",
     github: "https://github.com/harikantbajaj/munch",
   },
