@@ -9,23 +9,23 @@ import lsit5 from '../Media/showoff/zum2.png'
 import lsit6 from '../Media/showoff/zum3.png'
 import lsit7 from '../Media/showoff/zum4.png'
 
-import lsit8 from 'C:/Portfolio-main/src/Media/showoff/ai code.png'
+import lsit8 from '../Media/showoff/ai code.png'
 
-import lsit9 from 'C:/Portfolio-main/src/Media/showoff/dog1 (1).png'
-import lsit10 from 'C:/Portfolio-main/src/Media/showoff/dog1 (2).png'
+import lsit9 from '../Media/showoff/dog1 (1).png'
+import lsit10 from '../Media/showoff/dog1 (2).png'
 
-import lsit11 from 'C:/Portfolio-main/src/Media/showoff/a (1).png'
-import lsit12 from 'C:/Portfolio-main/src/Media/showoff/a (2).png'
-import lsit13 from 'C:/Portfolio-main/src/Media/showoff/a (3).png'
-import lsit14 from 'C:/Portfolio-main/src/Media/showoff/a (4).png'
+import lsit11 from '../Media/showoff/a (1).png'
+import lsit12 from '../Media/showoff/a (2).png'
+import lsit13 from '../Media/showoff/a (3).png'
+import lsit14 from '../Media/showoff/a (4).png'
 
 
-import lsit17 from 'C:/Portfolio-main/src/Media/showoff/b (1).png'
-import lsit18 from 'C:/Portfolio-main/src/Media/showoff/b (2).png'
+import lsit17 from '../Media/showoff/b (1).png'
+import lsit18 from '../Media/showoff/b (2).png'
 
-import lsit22 from 'C:/Portfolio-main/src/Media/showoff/travel (3).png'
-import lsit23 from 'C:/Portfolio-main/src/Media/showoff/travel (1).png'
-import lsit24 from 'C:/Portfolio-main/src/Media/showoff/travel (2).png'
+import lsit22 from '../Media/showoff/travel (3).png'
+import lsit23 from '../Media/showoff/travel (1).png'
+import lsit24 from '../Media/showoff/travel (2).png'
 
 
 import { motion } from 'framer-motion';
