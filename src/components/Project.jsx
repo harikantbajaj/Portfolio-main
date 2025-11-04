@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 
-import lsitHero from 'C:/Portfolio-main/src/Media/showoff/text1.png'
-import lsit1 from 'C:/Portfolio-main/src/Media/showoff/text2 (1).png'
-import lsit2 from 'C:/Portfolio-main/src/Media/showoff/text2 (2).png'
+import lsitHero from '../Media/showoff/text1.png'
+import lsit1 from '../Media/showoff/text2 (1).png'
+import lsit2 from '../Media/showoff/text2 (2).png'
 
-import lsit4 from 'C:/Portfolio-main/src/Media/showoff/zum0.png'
-import lsit5 from 'C:/Portfolio-main/src/Media/showoff/zum2.png'
-import lsit6 from 'C:/Portfolio-main/src/Media/showoff/zum3.png'
-import lsit7 from 'C:/Portfolio-main/src/Media/showoff/zum4.png'
+import lsit4 from '../Media/showoff/zum0.png'
+import lsit5 from '../Media/showoff/zum2.png'
+import lsit6 from '../Media/showoff/zum3.png'
+import lsit7 from '../Media/showoff/zum4.png'
 
 import lsit8 from 'C:/Portfolio-main/src/Media/showoff/ai code.png'
 
