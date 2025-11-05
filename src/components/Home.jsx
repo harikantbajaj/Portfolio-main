@@ -5,7 +5,7 @@ import twitter from '../Media/twitter.png'
 import Typed from 'typed.js';
 import hero from '../Media/hero.webp'
 import { motion } from 'framer-motion';
-import resume_fs from '../asset/resume_fs.pdf'
+import CV__harikantbajaj from '../asset/CV__harikantbajaj.pdf'
 import Freelance from './Freelance';
 
 function Home() {
@@ -48,7 +48,7 @@ function Home() {
           <a href="https://x.com/harikantbajaj08" aria-label='twitter' target='_blank'><img loading='lazy' className='dark:invert w-7 h-auto md:w-8 my-2 hover:bg-pink-500 p-1 rounded' src={twitter} alt="" /></a>
           <a href="https://www.linkedin.com/in/harikant/" aria-label='linkedin' target='_blank'><img loading='lazy' className='dark:invert w-7 h-auto md:w-8 my-2 hover:bg-pink-500 p-1 rounded' src={linkedin} alt="" /></a>
         </motion.div>
-        <motion.a href={resume_fs} initial='hidden' aria-label='resume' whileInView='visible' variants={textVariants} transition={{duration:0.3,delay:1.2}} className='my-2 dark:bg-green-600 bg-pink-600 dark:hover:bg-green-700 hover:bg-pink-700 text-white rounded-md w-fit px-3 py-1 text-base sm:text-lg md:text-xl'>Checkout CV</motion.a>
+        <motion.a href={CV__harikantbajaj} initial='hidden' aria-label='resume' whileInView='visible' variants={textVariants} transition={{duration:0.3,delay:1.2}} className='my-2 dark:bg-green-600 bg-pink-600 dark:hover:bg-green-700 hover:bg-pink-700 text-white rounded-md w-fit px-3 py-1 text-base sm:text-lg md:text-xl'>Checkout CV</motion.a>
       <Freelance/>
       </div>
       <div className='flex flex-1 items-center m-auto'>
