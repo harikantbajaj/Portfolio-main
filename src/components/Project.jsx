@@ -35,7 +35,7 @@ const projects = [
     title: "Text Summarization Project",
     subtitle: "AI-Powered Text Summarization Web App",
     description:
-      "A smart summarization platform powered by a fine-tuned Llama-2 model trained for abstractive summarization. Users can input text, upload documents/images (via OCR), or paste URLs for automatic content extraction and summarization. Built with React.js + Tailwind CSS on the frontend and a Python backend optimized using QLoRA for efficient model performance. Delivers clear, concise summaries evaluated with ROUGE & BLEU scores — fast, accurate, and user-friendly for research, reading, and productivity.",
+      "A smart summarization platform powered by a fine-tuned Llama-2 model for abstractive summarization. Users can input text, upload documents/images (via OCR), or paste URLs for automatic content extraction and summarization. Built with React.js + Tailwind CSS on the frontend and a Python backend optimized using QLoRA for efficient model performance. Delivers clear, concise summaries evaluated with ROUGE & BLEU scores — fast, accurate, and user-friendly for research, reading, and productivity.",
     images: [lsitHero, lsit1, lsit2],
     github: "https://github.com/harikantbajaj/Text-Summarization-Llama-2-main",
   },  {
