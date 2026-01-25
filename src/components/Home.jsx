@@ -3,7 +3,6 @@ import github from '../Media/github.png'
 import linkedin from '../Media/linkedin.png'
 import twitter from '../Media/twitter.png'
 import Typed from 'typed.js';
-import hero from '../Media/hero.webp'
 import { motion } from 'framer-motion';
 import CV__harikantbajaj from '../asset/CV__harikantbajaj.pdf'
 import Freelance from './Freelance';
@@ -13,24 +12,32 @@ function Home() {
     const desc =useRef(null)
 
     useEffect(() => {
+      let typed;
       const timer = setTimeout(() => {
-        new Typed(element.current, {
-          strings: ['Harikant Bajaj.', 'a Artificial Intelligence Machine Learning Engineer', 'a Software Developer Engineer.'],
+        typed = new Typed(element.current, {
+          strings: ['Harikant Bajaj.', 'an Artificial Intelligence & Machine Learning Engineer', 'a Software Development Engineer.'],
           typeSpeed: 70,
         });
       }, 800);
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+        typed?.destroy();
+      };
     }, []);
     
 
     useEffect(() => {
+      let typed;
       const timer = setTimeout(() => {
-        new Typed(desc.current, {
-          strings:['An AI dreamer and software craftsman, shaping smarter systems with logic, creativity, and purpose.'],
-          typeSpeed:3
+        typed = new Typed(desc.current, {
+          strings:['Building AI-first products and high-performance web apps — from model ideas to shipped experiences.'],
+          typeSpeed: 3
         });
       }, 1000);
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+        typed?.destroy();
+      };
   }, []);
 
     const textVariants = {
@@ -47,8 +54,12 @@ function Home() {
         <motion.div initial='hidden' whileInView='visible' variants={textVariants} transition={{duration:0.3,delay:0.9}} className="flex gap-5 pt-2">
           <a href="https://x.com/harikantbajaj08" aria-label='twitter' target='_blank'><img loading='lazy' className='dark:invert w-7 h-auto md:w-8 my-2 hover:bg-pink-500 p-1 rounded' src={twitter} alt="" /></a>
           <a href="https://www.linkedin.com/in/harikant/" aria-label='linkedin' target='_blank'><img loading='lazy' className='dark:invert w-7 h-auto md:w-8 my-2 hover:bg-pink-500 p-1 rounded' src={linkedin} alt="" /></a>
+          <a href="https://github.com/harikantbajaj" aria-label='github' target='_blank'><img loading='lazy' className='dark:invert w-7 h-auto md:w-8 my-2 hover:bg-pink-500 p-1 rounded' src={github} alt="" /></a>
         </motion.div>
-        <motion.a href={CV__harikantbajaj} initial='hidden' aria-label='resume' whileInView='visible' variants={textVariants} transition={{duration:0.3,delay:1.2}} className='my-2 dark:bg-green-600 bg-pink-600 dark:hover:bg-green-700 hover:bg-pink-700 text-white rounded-md w-fit px-3 py-1 text-base sm:text-lg md:text-xl'>Checkout CV</motion.a>
+        <motion.div initial='hidden' whileInView='visible' variants={textVariants} transition={{duration:0.3,delay:1.2}} className='flex flex-wrap gap-3 my-3'>
+          <a href={CV__harikantbajaj} aria-label='resume' className='dark:bg-green-600 bg-pink-600 dark:hover:bg-green-700 hover:bg-pink-700 text-white rounded-md w-fit px-3 py-1 text-base sm:text-lg md:text-xl'>Checkout CV</a>
+          <a href='#projects' aria-label='projects' className='border-2 border-pink-700 dark:border-green-500 px-3 py-1 text-base sm:text-lg md:text-xl rounded hover:bg-pink-600 dark:hover:bg-green-600 duration-150'>View Projects</a>
+        </motion.div>
       <Freelance/>
       </div>
       <div className='flex flex-1 items-center m-auto'>

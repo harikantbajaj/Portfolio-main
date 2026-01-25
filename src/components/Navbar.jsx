@@ -12,7 +12,7 @@ export default function Header() {
   const navItems=[
     {
       name:'Home',
-      slug:'#'
+      slug:'#home'
     },
     {
       name: "About",
@@ -21,6 +21,10 @@ export default function Header() {
     {
       name: "Skills",
       slug: "#skills"
+    },
+    {
+      name: "Experience",
+      slug: "#experience"
     },
     {
       name: "Projects",
@@ -34,7 +38,7 @@ export default function Header() {
 
   return (
     <section className="fixed top-0 w-full z-10 flex justify-around items-center py-2 backdrop-blur-sm tracking-normal md:tracking-wider" style={headerstyle}>
-      <a href='/' aria-label="home">
+      <a href='#home' aria-label="home">
             <motion.img loading="lazy" initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{duration:0.4}} className="w-8 sm:w-12 invert dark:invert-0" src={z} alt="" />
       </a>
       <div className="flex">
@@ -54,7 +58,7 @@ export default function Header() {
         {navItems.map((item,id)=>(
           <li key={id} className="list-none"><a className='active:text-green-500 md:mx-3 hover:underline text-lg underline-offset-4' href={item.slug}>{item.name}</a></li>
         ))}
-          <a href='#contact' className='active:text-green-500 mx-3 rounded-md dark:bg-green-600 text-white px-2 py-0.5 bg-pink-600 hover:bg-pink-700 dark:hover:bg-green-700 text-lg'>Contact Me</a>            
+          <a href='#contact' className='active:text-green-500 mx-3 rounded-md dark:bg-green-600 text-white px-2 py-0.5 bg-pink-600 hover:bg-pink-700 dark:hover:bg-green-700 text-lg'>Contact Me</a>
         </ul>
         <div className="ml-2 w-10 h-auto sm:w-12 invert dark:invert-0"><ThemeProvider><Switcher/></ThemeProvider></div>
       </div>

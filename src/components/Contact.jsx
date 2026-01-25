@@ -3,7 +3,6 @@ import github from '../Media/github.png'
 import linkedin from '../Media/linkedin.png'
 import twitter from '../Media/twitter.png'
 import paperplane from '../Media/paperplane.png'
-import location from '../Media/location.png'
 import whatsapp from '../Media/whatsapp.png'
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
@@ -12,8 +11,9 @@ function Contact() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const handleSubmitForm = (data) => {
-    const { Name, subject, message} = data;
-    const whatsappMessage = `Hi, I am ${Name}. ${subject}: ${message}`;
+    const { Name, subject, message } = data;
+    const subjectPrefix = subject ? `${subject}: ` : '';
+    const whatsappMessage = `Hi, I am ${Name}. ${subjectPrefix}${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappURL = `https://wa.me/+919109020520?text=${encodedMessage}`; 
     window.open(whatsappURL, "_blank");
@@ -41,22 +41,22 @@ function Contact() {
             <img loading='lazy' className='dark:invert w-8 h-auto m-4' src={mail} alt=""/>
             <div className="mt-2">
             <p className='font-semibold'>Mail me at</p>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harikantb08@gmail.com" target='_blank'><p className='font-bold text-pink-600 dark:text-green-400'>harikantb08@gmail.com</p></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harikantb08@gmail.com" target='_blank' rel='noreferrer'><p className='font-bold text-pink-600 dark:text-green-400'>harikantb08@gmail.com</p></a>
             </div>
         </div>
-        <motion.a initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.4}} className='ml-5 mt-1 flex bg-green-600 hover:bg-green-700 max-w-fit items-center gap-3 px-2 rounded' href="https://wa.me/+919109020520/" target='_blank'><img loading='lazy' aria-label='whatsapp' className='dark:invert w-5 lg:w-6 h-auto my-2 ' src={whatsapp} alt="" />Chat on Whatsapp</motion.a>
+        <motion.a initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.4}} className='ml-5 mt-1 flex bg-green-600 hover:bg-green-700 max-w-fit items-center gap-3 px-2 rounded' href="https://wa.me/+919109020520/" target='_blank' rel='noreferrer'><img loading='lazy' aria-label='whatsapp' className='dark:invert w-5 lg:w-6 h-auto my-2 ' src={whatsapp} alt="" />Chat on Whatsapp</motion.a>
         <div className="flex ml-5 mb-10 gap-5">
-            <a href="https://x.com/harikantbajaj08" aria-label='twitter' target='_blank'><motion.img loading='lazy' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:0}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={twitter} alt="" /></a>
-            <a href="https://www.linkedin.com/in/harikant/" aria-label='linkedin' target='_blank'><motion.img loading='lazy' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:0.3}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={linkedin} alt="" /></a>
-            <a href="https://github.com/harikantbajaj" aria-label='github' target='_blank'><motion.img loading='lazy' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:0.6}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={github} alt="" /></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harikantb08@gmail.com" target='_blank'><motion.img loading='lazy' aria-label='mail' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:1.2}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={paperplane} alt="" /></a>
+            <a href="https://x.com/harikantbajaj08" aria-label='twitter' target='_blank' rel='noreferrer'><motion.img loading='lazy' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:0}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={twitter} alt="" /></a>
+            <a href="https://www.linkedin.com/in/harikant/" aria-label='linkedin' target='_blank' rel='noreferrer'><motion.img loading='lazy' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:0.3}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={linkedin} alt="" /></a>
+            <a href="https://github.com/harikantbajaj" aria-label='github' target='_blank' rel='noreferrer'><motion.img loading='lazy' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:0.6}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={github} alt="" /></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harikantb08@gmail.com" target='_blank' rel='noreferrer'><motion.img loading='lazy' aria-label='mail' initial='hidden' whileInView='visible' variants={variants} transition={{duration:0.5,delay:1.2}} className='dark:invert w-7 h-auto my-2 hover:bg-pink-500 p-1 rounded' src={paperplane} alt="" /></a>
         </div>
       </div>
       <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:1,scale:1}} transition={{duration:0.4}}  className="flex w-full flex-col border-2 border-black dark:border-white -mt-5 md:w-2/5 backdrop-blur-3xl rounded-lg p-4">
         <h2 className='text-lg md:text-3xl mb-3'>Send us a message</h2>
         <form onSubmit={handleSubmit(handleSubmitForm)} className='flex flex-col gap-2' action="">
             <input {...register('Name', { required: 'Full Name is required' })} className='dark:bg-gray-950 p-1 px-2 text-base md:text-lg rounded-md' type="text" placeholder="Full name*"/>
-            {errors.fullName && <span className="text-red-500">{errors.fullName.message}</span>}
+            {errors.Name && <span className="text-red-500">{errors.Name.message}</span>}
             <input {...register('email', { required: 'Email is required', pattern: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/ })} className='dark:bg-gray-950 p-1 px-2 text-base md:text-lg rounded-md' type="text" placeholder="Email address*"/>
             {errors.email && <span className="text-red-500">{errors.email.message}</span>}
             <input {...register('subject')} className='dark:bg-gray-950 p-1 px-2 text-base md:text-lg rounded-md' type="text" placeholder="Subject"/>
