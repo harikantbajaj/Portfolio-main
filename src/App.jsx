@@ -7,6 +7,7 @@ const Skills = lazy(() => import('./components/Skills'))
 const Experience = lazy(() => import('./components/Experience'))
 const Project = lazy(() => import('./components/Project'))
 const Contact = lazy(() => import('./components/Contact'))
+const Services = lazy(() => import('./components/Services'))
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
         </section>
         <section className='h-full w-full scroll-mt-20' id='about'>
           <About />
+        </section>
+        <section className='h-full w-full scroll-mt-20' id='services'>
+          <Services />
         </section>
         <section className='h-full w-full scroll-mt-20' id='skills'>
           <Skills />
