@@ -19,6 +19,10 @@ export default function Header() {
       slug: "#about"
     },
     {
+      name: "Work with me",
+      slug: "#services"
+    },
+    {
       name: "Skills",
       slug: "#skills"
     },

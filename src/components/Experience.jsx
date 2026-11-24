@@ -3,30 +3,30 @@ import { motion } from 'framer-motion'
 export default function Experience() {
   const items = [
     {
-      title: 'AI/ML + Full-Stack Projects',
-      subtitle: 'LLMs, RAG systems, and production-ready web apps',
+      title: 'AI Engineer, Oggnai Technologies',
+      subtitle: 'Dec 2025 – present · Gurugram',
       points: [
-        'Built and shipped AI products spanning NLP, CV, and agentic workflows.',
-        'Focused on clean UX, performance, and deployability (Vercel / cloud).',
-        'End-to-end ownership: research, iteration, and engineering delivery.'
+        'Co-built a multilingual voice AI assistant that trains frontline workers on their live tasks; one worker who could not read the app rose from rank 60 to rank 1.',
+        'Built an API that lets AI agents run real operations safely: permission-checked actions, logged changes and a dry-run mode.',
+        'Shipped real-time photo audits with Claude and Gemini vision models, OCR on receipts and odometer photos, and face-recognition attendance.',
+        'Solo-built a client AI WhatsApp agent (conversations, scheduling, reminders) and automated hiring end to end, including AI interviews.'
       ]
     },
     {
-      title: 'Engineering Strengths',
-      subtitle: 'Systems thinking + rapid iteration',
+      title: 'Internships',
+      subtitle: 'Machine learning and data science, 2024 – 2025',
       points: [
-        'Strong fundamentals in DSA, OOP, APIs, and scalable architecture.',
-        'Pragmatic debugging and testing-first mindset for reliability.',
-        'Collaboration-friendly: clear communication and documentation.'
+        'Data Science Intern, Sustainable Basket: improved revenue and returns forecasting accuracy by 25%.',
+        'AI/ML Intern, Labmentix: ML models, OpenCV vision and NLP sentiment projects, a model served as a Flask API.',
+        'ML Intern, Suvidha Foundation: prediction and classification models with scikit-learn.'
       ]
     },
     {
-      title: 'Currently Exploring',
-      subtitle: 'Modern AI application patterns',
+      title: 'Open source',
+      subtitle: 'Built on my own time',
       points: [
-        'Multimodal applications and evaluation-driven development.',
-        'Inference optimization and cost-aware deployments.',
-        'Agent orchestration patterns for real-world workflows.'
+        'paxcli (npm): verifies coding-agent performance fixes with noise-bounded benchmarks; best verified result -84.8% latency.',
+        'LangGraph multi-agent travel planner, an MCP server, and real-time people detection with OpenCV.'
       ]
     }
   ]

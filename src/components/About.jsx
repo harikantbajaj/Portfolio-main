@@ -14,11 +14,11 @@ export default function About() {
         <motion.h1 initial='hidden' whileInView='visible' variants={textVariants} transition={{duration:0.4}} className='text-2xl md:text-3xl lg:text-5xl mb-7 font-bold text-pink-600 dark:text-green-400 '># know me</motion.h1>
         <motion.div initial='hidden' whileInView='visible' variants={textVariants} transition={{duration:0.4}} className='w-full text-base sm:text-lg md:text-xl'>
           <img loading='lazy' className='inline w-4 md:w-8 dark:invert-0 invert' src={qopen} alt=""/>
-          <p className='inline ml-6'>Hey there! I’m Harikant Bajaj, AI/ML enthusiast and software developer passionate about building intelligent, scalable, and high-performance applications. As a final-year B.Tech CSE student at Bennett University, I thrive at the intersection of machine learning, full-stack development, and innovation<br/><br/></p>
+          <p className='inline ml-6'>Hey there! I'm Harikant Bajaj, an AI engineer in Gurugram. For about a year I've been shipping AI to production for frontline teams across many sites: a multilingual voice assistant in Hindi, Tamil, Telugu and Kannada, WhatsApp agents that book and remind, AI that reads invoices and photos into live systems, and face-recognition attendance.<br/><br/></p>
           <p className='inline ml-6'>
-           With hands-on experience in Deep Learning, NLP, Computer Vision, LLMs, RAG Systems, and Generative AI, I love transforming ideas into impactful products. I work extensively with Python, TensorFlow, PyTorch, LangChain, and Hugging Face, along with React.js, Next.js, Node.js, and MongoDB, allowing me to develop powerful AI-driven web applications end-to-end.<br/><br/></p>
+           I work in Python (Django, FastAPI) and React, with Claude, Gemini and OpenAI models, LangGraph, MCP and OpenCV, deployed with Docker on Azure. B.Tech in Computer Science from Bennett University.<br/><br/></p>
           <p className='inline ml-6 mr-2'>
-          I’m driven by problem-solving, collaboration, and a relentless pursuit of excellence, making every project a fusion of innovation and reliability. Let’s create something extraordinary!</p>
+          I'm taking on projects now. Send me one task your team does by hand and I'll show you a working version before you pay anything.</p>
           <img loading='lazy' className='inline w-4 md:w-8 dark:invert-0 invert' src={qclose} alt=""/>
         </motion.div>
       </div>
